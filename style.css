@@ -103,9 +103,13 @@ nav .nav-logo a img {
 }
 
 nav .nav-logo h2 {
-    color: var(--secondary-color);
-    font-weight: 600;
-    font-size: 32px;
+    background: linear-gradient(90deg, #FDAB06, #FCD938, #F3E700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    font-size: 28px;
+    margin-left: -10px;
 }
 
 nav ul {
@@ -166,7 +170,10 @@ label .close-btn {
 
 .hero-container .text-section h2 {
     font-size: 40px;
-    color: var(--secondary-color);
+    background: linear-gradient(90deg, #FDAB06, #FCD938, #F3E700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .hero-container .text-section h3 {
@@ -191,12 +198,12 @@ label .close-btn {
 
 .hero-container .hero-section-button .button {
     padding: 8px 28px;
-    border: 2px solid transparent;
     outline: none;
+    border: none;
     cursor: pointer;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    background: var(--secondary-color);
+    background: linear-gradient(90deg, #FDAB06, #FCD938, #F3E700);
     color: var(--primary-color);
     font-size: 18px;
     font-weight: 600;
@@ -205,20 +212,17 @@ label .close-btn {
 
 .hero-container .hero-section-button .button:last-child {
     color: var(--white-color);
-    border-color: var(--white-color);
-    background: none;
+    background: linear-gradient(90deg, #19591a, #589200);
 }
 
 .hero-container .hero-section-button .button:first-child:hover {
     color: var(--white-color);
-    background: transparent;
-    border-color: var(--white-color);
+    background: linear-gradient(90deg, #19591a, #589200);
 }
 
 .hero-container .hero-section-button .button:last-child:hover {
     color: var(--primary-color);
-    background: var(--secondary-color);
-    border-color: var(--secondary-color);
+    background: linear-gradient(90deg, #FDAB06, #FCD938, #F3E700);
 }
 
 .hero-container .image-section {
@@ -236,8 +240,8 @@ label .close-btn {
     }
     50% {
       transform: translateY(-10px);
-      filter: drop-shadow(5px 15px 5px #f3e700);
-      -webkit-filter: drop-shadow(5px 15px 5px #f3e700);
+      filter: drop-shadow(0px 20px 10px #f3e700);
+      -webkit-filter: drop-shadow(0px 20px 10px #f3e700);
 }
   }
 /* About Us Section */
@@ -296,8 +300,8 @@ label .close-btn {
     }
     50% {
       transform: translateY(-10px);
-      filter: drop-shadow(5px 15px 5px #511FA0);
-      -webkit-filter: drop-shadow(5px 15px 5px #511FA0);
+      filter: drop-shadow(0px 20px 10px #511FA0);
+      -webkit-filter: drop-shadow(0px 20px 10px #511FA0);
 }
   }
 
@@ -415,8 +419,8 @@ label .close-btn {
     -o-transition: all .5s ease;
 }
 .section-container .services-items img:hover{
-    filter: drop-shadow(5px 15px 5px #f3e700);
-    -webkit-filter: drop-shadow(5px 15px 5px #f3e700);
+    filter: drop-shadow(0px 15px 5px #f3e700);
+    -webkit-filter: drop-shadow(0px 15px 5px #f3e700);
     transform: translateY(-5px);
     -webkit-transform: translateY(-5px);
     -moz-transform: translateY(-5px);
@@ -477,8 +481,27 @@ label .close-btn {
     -o-border-radius: 10px;
 }
 .why-container .why-items ion-icon{
-    filter: drop-shadow(0px 15px 5px #7acb00);
-    -webkit-filter: drop-shadow(0px 15px 5px #7acb00);
+    filter: drop-shadow(0px 15px 5px  #589300);
+    -webkit-filter: drop-shadow(0px 15px 5px  #589300);
+    border: 3px solid var(--secondary-color);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.why-container .why-items ion-icon:hover{
+    filter: none;
+    border: 3px solid var(--primary-color);
+    -webkit-filter: none;
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+}
+.why-container .why-items ion-icon:hover + .why-us-text h3{
+    color: var(--primary-color);
 }
 
 .why-container .why-items {
@@ -627,12 +650,12 @@ label .close-btn {
 
 .contact-container .contact-form .button {
     padding: 8px 28px;
-    border: 2px solid transparent;
+    border: none;
     outline: none;
     cursor: pointer;
     border-top-left-radius: 50px !important;
     border-bottom-right-radius: 50px !important;
-    background: var(--primary-color);
+    background: linear-gradient(90deg, #19591a, #589200);
     color: var(--white-color);
     font-size: 17px;
     font-weight: 600;
@@ -642,12 +665,16 @@ label .close-btn {
 .contact-container .contact-form .button:hover {
     color: var(--primary-color);
     background: transparent;
-    border-color: var(--primary-color);
 }
 .contact-text .contact-items {
     display: flex;
     gap: 20px;
     margin: 80px 0;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
 }
 
 .contact-text .contact-items i {
@@ -688,8 +715,12 @@ footer {
 }
 
 .footer-section .footer-logo a h2 {
-    font-weight: 600;
-    color: var(--secondary-color);
+    background: linear-gradient(90deg, #FDAB06, #FCD938, #F3E700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    margin-left: -8px;
 }
 
 .footer-section .useful-links ul li {
